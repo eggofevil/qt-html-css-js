@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trebuchet MS");
+  src: local("TrebuchetMS");
+  src: url(../fonts/TrebuchetMS.woff) format("woff");
+}
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Trebuchet MS Bold");
+  src: local("TrebuchetMS-Bold");
+  src: url(../fonts/TrebuchetMS-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Exo 2.0";
+  font-style: normal;
+  font-weight: lighter;
+  src: local("Exo 2.0 Thin");
+  src: local("Exo2.0-Thin");
+  src: url(../fonts/Exo2.0-Thin.woff) format("woff");
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  width: 1px;
+}
+.display-none {
+  display: none;
+}
+@media (min-width: 720px) and (min-height: 1152px),
+(min-width: 1152px) and (min-aspect-ratio: 1/1) {
+  html {
+    height: 100%;
+  }
+}
+body {
+  align-items: center;
+  background-image: url(../img/pattern.jpg);
+  background-position: 20px 4px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: center;
+}
+@media (min-width: 720px) and (min-height: 1152px),
+(min-width: 1152px) and (min-aspect-ratio: 1/1) {
+  body {
+    height: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .main {
+    height: 1152px;
+    width: 720px;
+  }
+}
+@media (min-width: 1152px) and (min-aspect-ratio: 1/1) {
+  .main {
+    height: 680px;
+    width: 1280px;
+  }
+}
+.main__title {
+  font-family: "Exo 2.0 Thin", sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 39px 0 24px;
+  text-align: center;
+}
+.main__items {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 320px;
+}
+@media (min-width: 720px) {
+  .main__items {
+    justify-content: space-around;
+    width: 720px;
+  }
+}
+@media (min-width: 1152px) and (min-aspect-ratio: 1/1) {
+  .main__items {
+    justify-content: space-between;
+    width: 1120px;
+  }
+}
+.card,
+.card__border {
+  position: relative;
+}
+.card__border {
+  background: transparent;
+  border-bottom: 438px solid #1698d9;
+  border-radius: 12px;
+  border-right: 278px solid #1698d9;
+  display: block;
+  height: 42px;
+  width: 42px;
+}
+.card__border::before {
+  border-color: transparent #1698d9 #1698d9 transparent;
+  border-style: solid;
+  border-width: 21px;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+.card__background {
+  background: transparent;
+  border-bottom: 432px solid #f2f2f2;
+  border-radius: 8px;
+  border-right: 272px solid #f2f2f2;
+  height: 40px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 40px;
+}
+.card__background::before {
+  border-color: transparent #f2f2f2 #f2f2f2 transparent;
+  border-style: solid;
+  border-width: 20px;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+.card__weight {
+  background: #1698d9;
+  border-radius: 50%;
+  bottom: 58px;
+  color: #fff;
+  font-size: 21px;
+  height: 80px;
+  position: absolute;
+  right: 16px;
+  text-align: center;
+  width: 80px;
+}
+.card__weight p {
+  font-size: 42px;
+  line-height: 32px;
+  margin: 16px 0 2px;
+}
+.card__slogan {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.001em;
+  margin-top: 15px;
+  text-align: center;
+}
+.card__slogan .slogan-default__button {
+  border-bottom: 1px dashed #1698d9;
+  color: #1698d9;
+  font-weight: bold;
+}
+.card__slogan .slogan-default__point {
+  color: #1698d9;
+  margin-left: -4px;
+}
+.container {
+  background: -28px 202px no-repeat url(../img/cat.png);
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 472px;
+  left: 4px;
+  padding-left: 42px;
+  position: absolute;
+  top: 4px;
+  width: 312px;
+}
+.container__description {
+  color: #666;
+  font-size: 16px;
+  margin: 18px 0 5px 2px;
+}
+.container__title {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+.container__title span {
+  display: block;
+  font-size: 24px;
+  line-height: 25px;
+  padding-left: 2px;
+}
+.container__features {
+  color: #666;
+  margin: 16px 0 0 2px;
+}
+.container__features span {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.card.disabled .card__border {
+  border-color: #b3b3b3;
+}
+.card.disabled .card__border::before {
+  border-bottom-color: #b3b3b3;
+  border-right-color: #b3b3b3;
+}
+.card.disabled .card__slogan {
+  color: #ff6;
+}
+.card.disabled .card__slogan.slogan-default {
+  display: none;
+}
+.card.disabled .card__slogan.slogan-disabled {
+  display: block;
+}
+.card.disabled .card__weight {
+  background-color: #b3b3b3;
+}
+.card.disabled .container {
+  color: #b3b3b3;
+  opacity: 0.5;
+}
+.card.disabled .container__description,
+.card.disabled .container__features {
+  color: #b3b3b3;
+}
+.card.selected .card__border {
+  border-color: #d91667;
+}
+.card.selected .card__border::before {
+  border-bottom-color: #d91667;
+  border-right-color: #d91667;
+}
+.card.selected .card__slogan.slogan-default {
+  display: none;
+}
+.card.selected .card__slogan.slogan-selected {
+  display: block;
+}
+.card.selected .card__weight {
+  background: #d91667;
+}
+.card:hover.active .card__border {
+  border-color: #2ea8e6;
+}
+.card:hover.active .card__border::before {
+  border-bottom-color: #2ea8e6;
+  border-right-color: #2ea8e6;
+}
+.card:hover.active .card__weight {
+  background: #2ea8e6;
+}
+.card:hover.selected .card__border {
+  border-color: #e62e7a;
+}
+.card:hover.selected .card__border::before {
+  border-bottom-color: #e62e7a;
+  border-right-color: #e62e7a;
+}
+.card:hover.selected .card__weight {
+  background: #e62e7a;
+}

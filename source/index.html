@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нямушка</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1 class="hidden">Нямушка - корм для кошек</h1>
+    <main class="main">
+      <h2 class="main__title">Ты сегодня покормил кота?</h2>
+      <div class="main__items items">
+        <scope with="foie_gras">
+          <include src="source/templates/item_template.html"></include>
+        </scope>
+        <scope with="fish">
+          <include src="source/templates/item_template.html"></include>
+        </scope>
+        <scope with="chicken">
+          <include src="source/templates/item_template.html"></include>
+        </scope>
+      </div>
+    </main>
+  </body>
+  <!-- some comment -->
+</html>

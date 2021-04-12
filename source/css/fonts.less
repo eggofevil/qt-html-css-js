@@ -1,0 +1,15 @@
+// @font-face mixin.
+.fontface(@family, @filename: @family, @weight: normal, @style: normal, @fontname: @family) {
+  @font-face {
+    font-family: @family;
+    src: local("@{fontname}");
+    src: local("@{filename}");
+    src: url("../fonts/@{filename}.woff") format("woff");
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+.fontface("Trebuchet MS", "TrebuchetMS", normal, normal);
+.fontface("Trebuchet MS", "TrebuchetMS-Bold", bold, normal, "Trebuchet MS Bold");
+.fontface("Exo 2.0", "Exo2.0-Thin", lighter, normal, "Exo 2.0 Thin");

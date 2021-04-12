@@ -1,0 +1,23 @@
+<section class="items__item card {{item_status}}">
+  <div class="card__border">
+    <div class="card__background"></div>
+    <div class="card__container container">
+      <div class="container__info">
+        <p class="container__description">Сказочное заморское яство</p>
+        <h3 class="container__title">Нямушка <span>{{item_content}}</span></h3>
+        <ul class="container__features features">
+          <li class="features__unit quantity"><span>{{item_quantity}}</span> порций</li>
+          <li class="features__unit present"><span>{{present_quantity}}</span> {{present_description}}</li>
+          <li class="features__unit addition">{{addition}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card__weight weight">
+    <p>{{item_weight}}</p>
+    кг
+  </div>
+  <p class="card__slogan slogan-default">Чего сидишь? Порадуй котэ, <span class="slogan-default__button">купи</span><span class="slogan-default__point">.</span></p>
+  <p class="card__slogan slogan-selected display-none">{{slogan_selected}}</p>
+  <p class="card__slogan slogan-disabled display-none">Печалька, {{item_content}} закончился.</p>
+</section>

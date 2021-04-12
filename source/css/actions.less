@@ -1,0 +1,32 @@
+.card:hover {
+  @hover-color: #2ea8e6;
+  @selected-hover-color: #e62e7a;
+  &.active {
+    & .card {
+      &__border {
+        border-color: @hover-color;
+        &::before {
+          border-right-color: @hover-color;
+          border-bottom-color: @hover-color;
+        }
+      }
+      &__weight {
+        background: @hover-color;
+      }
+    }
+  }
+  &.selected {
+    & .card {
+      &__border {
+        border-color: @selected-hover-color;
+        &::before {
+          border-right-color: @selected-hover-color;
+          border-bottom-color: @selected-hover-color;
+        }
+      }
+      &__weight {
+        background: @selected-hover-color;
+      }
+    }
+  }
+}

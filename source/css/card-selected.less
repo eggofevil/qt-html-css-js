@@ -1,0 +1,23 @@
+.card.selected {
+  @selected-color: #d91667; 
+  & .card {
+    &__border {
+      border-color: @selected-color;
+      &::before {
+        border-right-color: @selected-color;
+        border-bottom-color: @selected-color;
+      }
+    }
+    &__slogan {
+      &.slogan-default {
+        display: none;
+      }
+      &.slogan-selected {
+        display: block;
+      }
+    }
+    &__weight {
+      background: @selected-color;
+    }
+  }
+}

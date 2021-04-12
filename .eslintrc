@@ -1,0 +1,14 @@
+{
+  "extends": "htmlacademy/es5",
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-trailing-spaces": ["error", {
+      "skipBlankLines": true
+    }],
+    "no-console": "off",
+  }
+}

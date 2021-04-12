@@ -1,0 +1,83 @@
+.card {
+  @default-color: #1698d9;
+  @default-slogan-color: #ffffff;
+  @card-background-color: #f2f2f2;
+  position: relative;
+  &__border {
+    display: block;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-right: 278px solid @default-color;
+    border-bottom: 438px solid @default-color;
+    border-radius: 12px;
+    background: transparent;
+    &::before {
+    content: '';
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 0;
+      border: 21px solid @default-color;
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+  &__background {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    border-right: 272px solid @card-background-color;
+    border-bottom: 432px solid @card-background-color;
+    border-radius: 8px;
+    background: transparent;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border: 20px solid @card-background-color;
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+  &__weight {
+    position: absolute;
+    right: 16px;
+    bottom: 58px;
+    width: 80px;
+    height: 80px;
+    background: @default-color;
+    border-radius: 50%;
+    font-size: 21px;
+    color: #ffffff;
+    text-align: center;
+    & p {
+      font-size: 42px;
+      line-height: 32px;
+      margin: 0;
+      margin-top: 16px;
+      margin-bottom: 2px;
+    }
+  }
+  &__slogan {
+    margin-top: 15px;
+    font-size: 13px;
+    letter-spacing: 0.001em;
+    color: @default-slogan-color;
+    text-align: center;
+    & .slogan-default__button {
+      color: @default-color;
+      font-weight: bold;
+      border-bottom: 1px dashed @default-color;
+    }
+    & .slogan-default__point {
+      margin-left: -4px;
+      color: @default-color;
+    }
+  }
+}

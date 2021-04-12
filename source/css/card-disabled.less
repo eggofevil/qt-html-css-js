@@ -1,0 +1,35 @@
+.card.disabled {
+  @disabled-color: #b3b3b3; 
+  @disabled-slogan-color: #ffff66;
+  & .card {
+    &__border {
+      border-color: @disabled-color;
+      &::before {
+        border-right-color: @disabled-color;
+        border-bottom-color: @disabled-color;
+      }
+    }
+    &__slogan {
+      color: @disabled-slogan-color;
+      &.slogan-default {
+        display: none;
+      }
+      &.slogan-disabled {
+        display: block;
+      }
+    }
+    &__weight {
+      background-color: @disabled-color;
+    }
+  }
+  & .container {
+    opacity: 0.5;
+    color: @disabled-color;
+    &__description {
+      color: @disabled-color;
+    }
+    &__features {
+      color: @disabled-color;
+    }
+  }
+}
